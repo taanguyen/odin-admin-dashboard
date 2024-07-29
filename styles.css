@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / -1;
+}
+
+.header {
+    display: grid;
+}
+
+.main-content {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
