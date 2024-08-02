@@ -35,13 +35,19 @@ li {
     margin-bottom: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .header {
     grid-row: 1;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
-    padding-left: 3%;
-    padding-right: 4%;
+    padding-left: 20px;
+    padding-right: 40px;
+    font-weight: bold;
 }
 
 
@@ -61,7 +67,7 @@ li {
     align-items: center;
     justify-content: end;
     gap: 3%;
-    font-weight: bold;
+
 }
 
 .header-links {
