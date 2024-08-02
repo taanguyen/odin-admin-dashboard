@@ -6,43 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dashboard</title>
 </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,400;0,700;0,900;1,100;1,300&display=swap"
+    rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
 <body>
     <div class="container">
         <div class="sidebar">
-            <h3>Dashboard</h3>
-            <div class="nav">
-                <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
-                </ul>
-
-                <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
-                </ul>
-            </div>
+            <h3><svg alt="">
+                    <use href="assets/sidebar/view-dashboard.svg#dashboard"></use>
+                </svg>Dashboard</h3>
+            <ul>
+                <li> <svg alt="">
+                        <use href="assets/sidebar/home.svg#home"></use>
+                    </svg>Home</li>
+                <li> <svg alt="">
+                        <use href="assets/sidebar/card-account-details-outline.svg#profile"></use>
+                    </svg>Profile</li>
+                <li> <svg id="message" width="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2Z" />
+                    </svg>Messages</li>
+                <li><svg alt="">
+                        <use href="assets/sidebar/clock-time-three.svg#history"></use>
+                    </svg>History</li>
+                <li><svg alt="">
+                        <use href="assets/sidebar/note-multiple.svg#tasks"></use>
+                    </svg>Tasks</li>
+                <li><svg alt="">
+                        <use href="assets/sidebar/account-group.svg#community"></use>
+                    </svg>Communities</li>
+            </ul>
+            <ul>
+                <li><svg alt="">
+                        <use href="assets/sidebar/cog.svg#settings"></use>
+                    </svg>Settings</li>
+                <li><svg alt="">
+                        <use href="assets/sidebar/help-box.svg#support"></use>
+                    </svg>Support</li>
+                <li><svg alt="">
+                        <use href="assets/sidebar/shield-check.svg#privacy"></use>
+                    </svg>Privacy</li>
+            </ul>
         </div>
         <div class="right-container">
             <div class="header">
                 <div class="search-items">
-                    <div class="search-icon"></div>
+                    <svg alt="">
+                        <use href="assets/header/magnify.svg#magnify"></use>
+                    </svg>
                     <input type="search" name="search-bar" id="search-bar">
                 </div>
                 <div class="notif">
-                    <div class="notification"></div>
-                    <div class="profile-icon"></div>
+                    <svg id="bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" />
+                    </svg>
+                    <img src="assets/profile-icons/rabbit.png" alt="">
                     <p>Morgan Oakley</p>
                 </div>
                 <div class="profile-icon-large">
-                    <p>Hi there,</p>
-                    <h2>Morgan Oakley(@morgan)</h2>
+                    <img src="assets/profile-icons/rabbit.png" alt="">
+                    <div class="hello-text">
+                        <p>Hi there,</p>
+                        <h2>Morgan Oakley(@morgan)</h2>
+                    </div>
                 </div>
                 <div class="header-links">
                     <button type="button">New</button>
@@ -57,7 +87,8 @@
                     <div class="project">
                         <div class="project-text">
                             <p>Super Cool Project</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe culpa, asperiores neque
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe culpa, asperiores
+                                neque
                                 atque
                                 blanditiis voluptate nostrum</p>
                         </div>
@@ -79,7 +110,7 @@
                             <p>Less Cool Project</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nulla hic repudiandae
                                 quisquam
-                                accusamus vitae dolor iusto provident fuga. Provident voluptas, illo incidunt omnis!</p>
+                                accusamus vitae dolor iusto provident fuga. </p>
                         </div>
                         <div class="project-icons">
                             <svg alt="">
@@ -97,11 +128,7 @@
                     <div class="project">
                         <div class="project-text">
                             <p>Impossible App</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, eaque. Rem ad tenetur
-                                iste
-                                eius adipisci voluptatibus quia, non, nihil qui suscipit aut, unde eveniet magnam ab
-                                tempore
-                                quae voluptatem!</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                         </div>
                         <div class="project-icons">
                             <svg alt="">
@@ -137,7 +164,8 @@
                     <div class="project">
                         <div class="project-text">
                             <p>Ad Blocker</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsum harum! Nostrum vero
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsum harum! Nostrum
+                                vero
                                 vitae
                                 necessitatibus accusantium pariatur recusandae odio ipsum?</p>
                         </div>
